@@ -35,5 +35,16 @@ To run the server locally in developer mode, open terminal and run:
 npm run dev
 ```
 
-Developer mode runs off the TypeScript source. Any saves will reset the server and run the latest version of the codebase. 
+Developer mode runs off the TypeScript source. Any saves will reset the server and run the latest version of the codebase.
 
+## Deploying the Project
+
+Project is deployed using Elastic Beanstalk. To deploy this project on AWS, run
+```
+npm run build // To create our buiild folder
+eb init // Not necessary from here since the project is already initialized
+eb create // Not neccesary here since we have already created an environment
+eb deploy // To update the code in our project
+```
+
+Note: This git repo does not have the .ebextensions folder which contains our environment variables for our project
