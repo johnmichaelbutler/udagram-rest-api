@@ -39,12 +39,12 @@ Developer mode runs off the TypeScript source. Any saves will reset the server a
 
 ## Deploying the Project
 
-Project is deployed using Elastic Beanstalk. To deploy this project on AWS, run
+Project is deployed using Elastic Beanstalk. To deploy this project on AWS, run:
 ```
-npm run build // To create our buiild folder
-eb init // Not necessary from here since the project is already initialized
-eb create // Not neccesary here since we have already created an environment
+npm run build // To create our build folder
+eb init
+eb create
 eb deploy // To update the code in our project
 ```
 
-Note: This git repo does not have the .ebextensions folder which contains our environment variables for our project
+Note: This git repo does not have the .ebextensions folder which contains our environment variables for our project or the .elasticbeanstalk folder.
